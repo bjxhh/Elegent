@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		.one {
+			float: left;
+			margin-left: 20px;
+		}
+
+		.two {
+			float: left;
+			margin-left: 20px;
+		}
+
+		.three {
+			float: left;
+			margin-left: 20px;
+		}
+
+		.fonr {
+			float: left;
+			margin-left: 20px;
+		}
+
+		.zp {
+			height: 175px;
+			width: 125px;
+			background-color: black;
+			border-radius: 10px;
+			border: 2px solid #ff6d00;
+			text-align: center;
+			position: relative;
+		}
+
+		.zzw_left_top {
+			/* 样式设置 */
+			width: 40px;
+			height: 40px;
+			border-radius: 10px;
+			/* 旋转图片 */
+			transform: rotate(-90deg);
+			/* 图片位置设置 */
+			position: absolute;
+			left: 0;
+		}
+
+		.zzw_left_bottom {
+			/* 样式设置 */
+			width: 40px;
+			height: 40px;
+			border-radius: 10px;
+			/* 旋转图片 */
+			transform: rotate(-180deg);
+			/* 图片位置设置 */
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+
+		.zzw_right_top {
+			/* 样式设置 */
+			width: 40px;
+			height: 40px;
+			border-radius: 10px;
+			/* 旋转图片 */
+			transform: rotate(0deg);
+			/* 图片位置设置 */
+			position: absolute;
+			right: 0;
+		}
+
+		.zzw_right_bottom {
+			/* 样式设置 */
+			width: 40px;
+			height: 40px;
+			border-radius: 10px;
+			/* 旋转图片 */
+			transform: rotate(90deg);
+			/* 图片位置设置 */
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		.zz {
+			width: 80px;
+			height: 130px;
+			position: absolute;
+			left: 22.5px;
+			top: 0;
+		}
+
+		.get_zzw img {
+			display: none;
+		}
+	</style>
+	<body>
+		<div class="max">
+			<div class="mian">
+				<div class="one">
+					<div onclick="zzclick(1)" onmouseover="zzget(1)" onmouseleave="zzover(1)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(2)" onmouseover="zzget(2)" onmouseleave="zzover(2)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(3)" onmouseover="zzget(3)" onmouseleave="zzover(3)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(4)" onmouseover="zzget(4)" onmouseleave="zzover(4)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+				</div>
+
+
+				<div class="two">
+					<div onclick="zzclick(5)" onmouseover="zzget(5)" onmouseleave="zzover(5)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(6)" onmouseover="zzget(6)" onmouseleave="zzover(6)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(7)" onmouseover="zzget(7)" onmouseleave="zzover(7)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(8)" onmouseover="zzget(8)" onmouseleave="zzover(8)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+				</div>
+
+
+				<div class="three">
+					<div onclick="zzclick(9)" onmouseover="zzget(9)" onmouseleave="zzover(9)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(10)" onmouseover="zzget(10)" onmouseleave="zzover(10)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(11)" onmouseover="zzget(11)" onmouseleave="zzover(11)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(12)" onmouseover="zzget(12)" onmouseleave="zzover(12)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+				</div>
+
+
+				<div class="fonr">
+					<div onclick="zzclick(13)" onmouseover="zzget(13)" onmouseleave="zzover(13)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(14)" onmouseover="zzget(14)" onmouseleave="zzover(14)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(15)" onmouseover="zzget(15)" onmouseleave="zzover(15)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+					<div onclick="zzclick(16)" onmouseover="zzget(16)" onmouseleave="zzover(16)" class="zp">
+						<img name="zzwimg" class="zzw_left_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_left_bottom" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_top" src="img/蜘蛛网.png">
+						<img name="zzwimg" class="zzw_right_bottom" src="img/蜘蛛网.png">
+						<div class="get_zzw">
+							<img name="get_zzwimg" class="zzw_left_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_left_bottom" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_top" src="img/点击后蜘蛛网.png">
+							<img name="get_zzwimg" class="zzw_right_bottom" src="img/点击后蜘蛛网.png">
+						</div>
+						<img name="zzchange" class="zz" src="img/蜘蛛.png">
+					</div><br>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+	<script type="text/javascript">
+		// 鼠标移入动画实现
+		function zzget(index) {
+			// 1.测试移入事件
+			console.log("鼠标移入事件测试");
+			// 2.获取全部的四张蜘蛛网图片
+			// 2.存入至数组newimg中
+			var newimg = document.getElementsByName("zzwimg");
+			// 3.测试是否取值成功
+			// console.log(newimg);
+			// 4.循环改变四张图片的大小
+			for (var i = 4 * index - 4; i < 4 * index; i++) {
+				newimg[i].style.width = 55 + "px";
+				newimg[i].style.height = 55 + "px";
+			}
+			// 5.获取蜘蛛的图片并改变长度
+			var newzz = document.getElementsByName("zzchange");
+			for (var s = index - 1; s < index; s++) {
+				newzz[s].style.height = 140 + "px";
+			}
+
+		}
+		// 鼠标移出动画实现
+		function zzover(index) {
+			// 1.测试移出事件
+			console.log("鼠标移出事件测试");
+			// 2.获取全部的四张蜘蛛网图片
+			// 2.存入至数组newimg中
+			var newimg = document.getElementsByName("zzwimg");
+			// 3.测试是否取值成功
+			// console.log(newimg);
+			// 4.循环改变四张图片的大小
+			for (var i = 4 * index - 4; i < 4 * index; i++) {
+				newimg[i].style.width = 40 + "px";
+				newimg[i].style.height = 40 + "px";
+			}
+			// 5.获取蜘蛛的图片并改变长度
+			var newzz = document.getElementsByName("zzchange");
+			newzz[index - 1].style.height = 130 + "px";
+		}
+		
+		// 鼠标点击动画实现
+		function zzclick(index) {
+			var arr = [];
+			arr.push(index);
+			// 1.测试点击事件
+			console.log("鼠标点击事件测试");
+			// 根据id获取纸牌的div
+			var newdiv = document.getElementsByClassName("zp");
+			// 根据id获取蜘蛛的div
+			var newzz = document.getElementsByName("zzchange");
+			// 根据id获取点击前蜘蛛网的div
+			var newimg = document.getElementsByName("zzwimg");
+			// 根据id获取点击前蜘蛛网的div
+			var getnewzz = document.getElementsByName("get_zzwimg");
+				// 循环改变纸牌的背景颜色
+				// 并隐藏蜘蛛的图片
+				newdiv[index - 1].style.backgroundColor = "white";
+				newzz[index - 1].style.display = "none";
+				// 隐藏黄色蜘蛛网的图片
+				// 显示黑色蜘蛛网的图片
+				for (var s = 4 * index - 4; s < 4 * index; s++) {
+					getnewzz[s].style.display = "block";
+					newimg[s].style.display = "none";
+				}
+		}
+	</script>
+</html>
